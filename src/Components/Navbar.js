@@ -1,4 +1,5 @@
 import  * as React from 'react'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 
 
 
@@ -16,7 +17,10 @@ export default function Navbar(props) {
             <a className="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">{props.AboutText}</a>
+            <a className="nav-link" href="/about">{props.AboutText}</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link active" aria-current="page" href="/about">About</a>
           </li>
          </ul>
         <form className="d-flex" role="search">
